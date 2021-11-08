@@ -10,7 +10,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class XssFormRestController {
 
     @GetMapping("echo")
-    public String echo(@RequestParam String data) {
-        return data;
+    public String echo(@RequestParam String data,
+                       @RequestParam(required = false) String globalParameter) {
+        return "data: " + data + ", globalParameter: " + globalParameter;
     }
 }
