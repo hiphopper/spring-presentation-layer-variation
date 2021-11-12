@@ -1,0 +1,8 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+    }
+}
+
+rootProject.name = 'spring-presentation-layer-variation'
+include 'lucy-xss-filter'

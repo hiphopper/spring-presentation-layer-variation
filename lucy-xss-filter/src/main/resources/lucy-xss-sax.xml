@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config xmlns="http://www.nhncorp.com/lucy-xss"
+        extends="lucy-xss-superset-sax.xml">
+
+    <elementRule>
+    </elementRule>
+
+    <attributeRule>
+        <attribute name="href">
+            <allowedPattern><![CDATA[(?i)['"]?\s*(http:|https:|mms:|sms:|mailto:|x-msg:|/).+]]></allowedPattern>
+            <listener>com.gsk.presentation.lucy.config.listener.WhiteDomainListener</listener>
+        </attribute>
+    </attributeRule>
+
+</config>
