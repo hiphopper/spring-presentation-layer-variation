@@ -1,6 +1,7 @@
 package com.gsk.presentation.lucy.config;
 
 import com.navercorp.lucy.security.xss.servletfilter.XssEscapeServletFilter;
+import org.springframework.boot.autoconfigure.jackson.Jackson2ObjectMapperBuilderCustomizer;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
